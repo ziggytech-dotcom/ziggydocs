@@ -124,7 +124,7 @@ export default function NotarizationSection({ doc, recipients, proofConfigured }
           <div className="flex-1">
             <p className="text-amber-400 font-semibold text-sm">Notarization Required</p>
             <p className="text-[#888] text-xs mt-1 leading-relaxed">
-              This document type typically requires notarization. Connect Proof to enable Remote Online Notarization — legally binding, 100% digital.
+              This document type typically requires notarization. Connect Proof to enable Remote Online Notarization &mdash; legally binding, 100% digital.
             </p>
             <a href="/settings" className="inline-flex items-center gap-1.5 mt-3 text-xs text-amber-400 hover:text-amber-300 transition-colors font-medium">
               Set Up Notarization →

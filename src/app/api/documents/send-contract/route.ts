@@ -55,7 +55,7 @@ export async function POST(req: NextRequest) {
     .from('zd_documents')
     .insert({
       user_id: template.user_id,
-      title: `${template.title} — ${recipientName}`,
+      title: `${template.title} -- ${recipientName}`,
       file_url: template.file_url,
       fields_json: template.fields_json,
       status: 'sent',
@@ -100,7 +100,7 @@ export async function POST(req: NextRequest) {
     subject: `Please sign: ${template.title}`,
     html: documentSigningEmailHtml({
       recipientName,
-      documentTitle: `${template.title} — ${recipientName}`,
+      documentTitle: `${template.title} -- ${recipientName}`,
       signingLink: `${appUrl}/sign/${signingToken}`,
       expiresAt: expiresDisplay,
     }),

@@ -83,7 +83,7 @@ function ProofSection({ savedConfig }: { savedConfig: Record<string, string> }) 
       const res = await fetch('/api/proof/test-connection', { method: 'POST' })
       const data = await res.json() as { success?: boolean; accountName?: string; error?: string }
       if (res.ok && data.success) {
-        setTestResult({ ok: true, msg: `Connected${data.accountName ? ` — ${data.accountName}` : ''}` })
+        setTestResult({ ok: true, msg: `Connected${data.accountName ? ` &mdash; ${data.accountName}` : ''}` })
       } else {
         setTestResult({ ok: false, msg: data.error ?? 'Connection failed' })
       }
@@ -106,7 +106,7 @@ function ProofSection({ savedConfig }: { savedConfig: Record<string, string> }) 
               <h3 className="text-white font-medium">Proof.com</h3>
               {isConfigured && <span className="text-xs bg-blue-500/10 text-blue-400 border border-blue-500/20 px-2 py-0.5 rounded-full">Configured</span>}
             </div>
-            <p className="text-[#888] text-xs mt-0.5">Remote Online Notarization (RON) — legally binding video notarization</p>
+            <p className="text-[#888] text-xs mt-0.5">Remote Online Notarization (RON) &mdash; legally binding video notarization</p>
           </div>
         </div>
         <button
@@ -275,7 +275,7 @@ export default function SettingsClient({ savedIntegrations }: Props) {
                 <span className="text-xs bg-green-500/10 text-green-400 border border-green-500/20 px-2 py-0.5 rounded-full font-medium">Recommended</span>
               </div>
               <p className="text-[#888] text-sm mt-1">
-                Native e-signature — included in your Business Suite subscription. No extra cost.
+                Native e-signature &mdash; included in your Business Suite subscription. No extra cost.
               </p>
             </div>
           </div>
@@ -355,7 +355,7 @@ export default function SettingsClient({ savedIntegrations }: Props) {
         </div>
       </div>
 
-      {/* Notarization — Proof.com BYOK */}
+      {/* Notarization &mdash; Proof.com BYOK */}
       <div>
         <h2 className="text-xs text-[#555] uppercase tracking-widest mb-4">Notarization (Remote Online)</h2>
         <ProofSection savedConfig={savedIntegrations['proof'] ?? {}} />

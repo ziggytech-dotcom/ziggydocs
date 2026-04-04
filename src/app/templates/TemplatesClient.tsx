@@ -98,7 +98,7 @@ export default function TemplatesClient({ templates: initial, userId }: { templa
                 </button>
               </div>
               <h3 className="text-white font-medium mb-1 truncate">{tmpl.title}</h3>
-              <p className="text-[#888] text-xs mb-1">{(tmpl.fields_json ?? []).length} fields · {tmpl.file_url ? 'PDF attached' : 'No PDF'}</p>
+              <p className="text-[#888] text-xs mb-1">{(tmpl.fields_json ?? []).length} fields &middot; {tmpl.file_url ? 'PDF attached' : 'No PDF'}</p>
               <p className="text-[#555] text-xs mb-4">{formatDate(tmpl.created_at)}</p>
               <Link
                 href={`/templates/${tmpl.id}/fields`}

@@ -133,7 +133,7 @@ export default function BulkSendClient({ userId }: { userId: string }) {
     <div className="max-w-2xl mx-auto px-6 py-10 space-y-8">
       <div>
         <h1 className="text-2xl font-bold text-white mb-1">Bulk Send</h1>
-        <p className="text-[#888] text-sm">Send the same document to multiple recipients — each gets their own individual copy to sign.</p>
+        <p className="text-[#888] text-sm">Send the same document to multiple recipients &mdash; each gets their own individual copy to sign.</p>
       </div>
 
       {/* Document title */}
@@ -143,7 +143,7 @@ export default function BulkSendClient({ userId }: { userId: string }) {
           type="text"
           value={title}
           onChange={e => setTitle(e.target.value)}
-          placeholder="e.g. NDA — Q2 2026"
+          placeholder="e.g. NDA &mdash; Q2 2026"
           className="w-full bg-[#111] border border-[#222] rounded-xl px-4 py-3 text-white placeholder-[#444] focus:outline-none focus:border-[#7c3aed] transition-colors text-sm"
         />
       </div>
@@ -167,13 +167,13 @@ export default function BulkSendClient({ userId }: { userId: string }) {
             <>
               <FileCheck size={24} className="mx-auto mb-2 text-[#7c3aed]" />
               <p className="text-white font-medium text-sm">{file.name}</p>
-              <p className="text-[#888] text-xs mt-1">{(file.size / 1024).toFixed(0)} KB · Click to replace</p>
+              <p className="text-[#888] text-xs mt-1">{(file.size / 1024).toFixed(0)} KB &middot; Click to replace</p>
             </>
           ) : (
             <>
               <Upload size={24} className="mx-auto mb-2 text-[#555]" />
               <p className="text-white font-medium text-sm">Drop PDF here or click to browse</p>
-              <p className="text-[#888] text-xs mt-1">Max 10MB · Shared across all recipients</p>
+              <p className="text-[#888] text-xs mt-1">Max 10MB &middot; Shared across all recipients</p>
             </>
           )}
         </div>

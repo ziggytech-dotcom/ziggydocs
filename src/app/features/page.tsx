@@ -12,12 +12,12 @@ export default function FeaturesPage() {
     {
       icon: <PenLine className="w-6 h-6" />,
       title: 'E-Signature Collection',
-      description: 'Legally binding e-signatures compliant with ESIGN and UETA. Signers complete documents in seconds — no account needed.',
+      description: 'Legally binding e-signatures compliant with ESIGN and UETA. Signers complete documents in seconds &mdash; no account needed.',
     },
     {
       icon: <Send className="w-6 h-6" />,
       title: 'Instant Delivery',
-      description: 'Send documents via email link. Recipients sign from any device — desktop, tablet, or phone — without installing anything.',
+      description: 'Send documents via email link. Recipients sign from any device &mdash; desktop, tablet, or phone &mdash; without installing anything.',
     },
     {
       icon: <Users className="w-6 h-6" />,
@@ -32,7 +32,7 @@ export default function FeaturesPage() {
     {
       icon: <Shield className="w-6 h-6" />,
       title: 'Audit Trail',
-      description: 'Every action — open, viewed, signed — is timestamped and logged. Certificate of completion included.',
+      description: 'Every action &mdash; open, viewed, signed &mdash; is timestamped and logged. Certificate of completion included.',
     },
     {
       icon: <Download className="w-6 h-6" />,
@@ -47,7 +47,7 @@ export default function FeaturesPage() {
     {
       icon: <Zap className="w-6 h-6" />,
       title: 'Template Library',
-      description: 'Save your most-used documents as templates. Send the same contract in seconds — pre-filled with signer info.',
+      description: 'Save your most-used documents as templates. Send the same contract in seconds &mdash; pre-filled with signer info.',
     },
     {
       icon: <Globe className="w-6 h-6" />,
@@ -101,7 +101,7 @@ export default function FeaturesPage() {
           <span className="text-[#7c3aed]">Simple experience.</span>
         </h1>
         <p className="text-xl text-[#888] max-w-2xl mx-auto leading-relaxed">
-          ZiggyDocs gives you everything you need to send, sign, and manage documents — without the complexity of enterprise tools.
+          ZiggyDocs gives you everything you need to send, sign, and manage documents &mdash; without the complexity of enterprise tools.
         </p>
       </section>
 

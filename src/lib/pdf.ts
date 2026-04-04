@@ -82,7 +82,7 @@ export async function generateSignedPdf(opts: EmbedOptions): Promise<Uint8Array>
   certPage.drawText('DOCUMENT COMPLETION CERTIFICATE', {
     x: margin, y: height - 48, size: 14, font: helveticaBold, color: rgb(0.486, 0.231, 0.929),
   })
-  certPage.drawText('ZiggyDocs — Secure Electronic Signing', {
+  certPage.drawText('ZiggyDocs -- Secure Electronic Signing', {
     x: margin, y: height - 65, size: 9, font: helvetica, color: rgb(0.4, 0.4, 0.4),
   })
 
@@ -111,13 +111,13 @@ export async function generateSignedPdf(opts: EmbedOptions): Promise<Uint8Array>
     for (const signer of opts.allSigners) {
       const ts = signer.signed_at
         ? new Date(signer.signed_at).toLocaleString('en-US', { timeZone: 'America/New_York' }) + ' ET'
-        : '—'
+        : '--'
       const ip = signer.ip_address ?? 'unknown'
       certPage.drawText(`${signer.name} <${signer.email}>`, {
         x: margin, y: yPos, size: 9, font: helveticaBold, color: rgb(0.1, 0.1, 0.1),
       })
       yPos -= 14
-      certPage.drawText(`Signed: ${ts}  ·  IP: ${ip}`, {
+      certPage.drawText(`Signed: ${ts}  &middot;  IP: ${ip}`, {
         x: margin + 10, y: yPos, size: 8, font: helvetica, color: rgb(0.4, 0.4, 0.4),
       })
       yPos -= 18
@@ -132,7 +132,7 @@ export async function generateSignedPdf(opts: EmbedOptions): Promise<Uint8Array>
   for (const event of opts.auditEvents) {
     const label = event.event.replace(/_/g, ' ').toUpperCase()
     const ts = new Date(event.created_at).toLocaleString('en-US')
-    const ipStr = event.ip_address ? ` — ${event.ip_address}` : ''
+    const ipStr = event.ip_address ? ` -- ${event.ip_address}` : ''
     certPage.drawText(label, { x: margin, y: yPos, size: 8, font: helveticaBold, color: rgb(0.3, 0.3, 0.3) })
     certPage.drawText(`${ts}${ipStr}`, { x: margin + 130, y: yPos, size: 8, font: helvetica, color: rgb(0.4, 0.4, 0.4) })
     yPos -= 16

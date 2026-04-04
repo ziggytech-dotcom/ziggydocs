@@ -79,7 +79,7 @@ export default function ContactPage() {
             },
             {
               q: 'Is there phone support?',
-              a: 'Not currently — but our email support is fast and our team actually reads every message.',
+              a: 'Not currently &mdash; but our email support is fast and our team actually reads every message.',
             },
             {
               q: 'Can I get a live demo?',

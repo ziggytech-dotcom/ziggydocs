@@ -30,14 +30,14 @@ export default function LandingPage() {
       <section className="max-w-6xl mx-auto px-6 pt-24 pb-20 text-center">
         <div className="inline-flex items-center gap-2 bg-[#7c3aed]/10 border border-[#7c3aed]/30 rounded-full px-4 py-1.5 text-sm text-[#a78bfa] mb-8">
           <Zap size={13} />
-          No credit card required · Free plan available
+          No credit card required &middot; Free plan available
         </div>
         <h1 className="text-6xl md:text-7xl font-black tracking-tight leading-none mb-6">
           Sign documents<br />
           <span className="text-[#7c3aed]">online. Free.</span>
         </h1>
         <p className="text-xl text-[#888] max-w-2xl mx-auto mb-10 leading-relaxed">
-          Upload a PDF, place signature fields, send to anyone — they sign in seconds, no account needed.
+          Upload a PDF, place signature fields, send to anyone &mdash; they sign in seconds, no account needed.
           Legally binding. Audit trail included.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -48,7 +48,7 @@ export default function LandingPage() {
             See how it works
           </a>
         </div>
-        <p className="text-[#555] text-sm mt-6">3 documents/month free · No signup required for signers</p>
+        <p className="text-[#555] text-sm mt-6">3 documents/month free &middot; No signup required for signers</p>
       </section>
 
       {/* How it works */}
@@ -89,7 +89,7 @@ export default function LandingPage() {
             { icon: Download, title: 'Signed PDF download', desc: 'Get a completed PDF with signatures embedded and a completion certificate appended.' },
             { icon: FileText, title: 'Reusable templates', desc: 'Save frequently used documents as templates to send again in seconds.' },
             { icon: CheckCircle, title: 'Audit trail', desc: 'Every view, completion, and signature is timestamped and logged with IP address.' },
-            { icon: Zap, title: 'No account for signers', desc: 'Recipients open a link from their email and sign — zero friction, no signup.' },
+            { icon: Zap, title: 'No account for signers', desc: 'Recipients open a link from their email and sign &mdash; zero friction, no signup.' },
           ].map(({ icon: Icon, title, desc }) => (
             <div key={title} className="bg-[#111] border border-[#222] rounded-2xl p-6 hover:border-[#7c3aed]/40 transition-colors">
               <div className="w-10 h-10 bg-[#7c3aed]/15 rounded-xl flex items-center justify-center mb-4">

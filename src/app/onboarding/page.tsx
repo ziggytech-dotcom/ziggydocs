@@ -96,7 +96,7 @@ function SkipLink({ onClick, label = 'Skip for now' }: { onClick: () => void; la
   )
 }
 
-// Step 1 — Welcome
+// Step 1 &mdash; Welcome
 function StepWelcome({ onNext, onSkip }: { onNext: () => void; onSkip: () => void }) {
   return (
     <div className="text-center">
@@ -121,7 +121,7 @@ function StepWelcome({ onNext, onSkip }: { onNext: () => void; onSkip: () => voi
   )
 }
 
-// Step 2 — Business Info
+// Step 2 &mdash; Business Info
 function StepBusinessInfo({
   businessName,
   setBusinessName,
@@ -203,7 +203,7 @@ function StepBusinessInfo({
   )
 }
 
-// Step 3 — Create First Template
+// Step 3 &mdash; Create First Template
 function StepCreateTemplate({
   templateName,
   setTemplateName,
@@ -226,7 +226,7 @@ function StepCreateTemplate({
       </div>
       <h2 className="text-xl font-bold text-white mb-1">Create your first template</h2>
       <p className="text-[#888] text-sm mb-6">
-        Templates save time — define a document once, send it to anyone.
+        Templates save time &mdash; define a document once, send it to anyone.
       </p>
 
       <div className="space-y-4 mb-6">
@@ -274,7 +274,7 @@ function StepCreateTemplate({
   )
 }
 
-// Step 4 — Done
+// Step 4 &mdash; Done
 function StepDone({ onFinish }: { onFinish: () => void }) {
   const nextSteps = [
     {

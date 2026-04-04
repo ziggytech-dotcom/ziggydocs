@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { ZiggyDocsLogo } from '@/components/ZiggyDocsLogo'
 
 export const metadata = {
-  title: 'Cookie Policy — ZiggyDocs',
+  title: 'Cookie Policy &mdash; ZiggyDocs',
   description: 'How ZiggyDocs uses cookies and similar technologies.',
 }
 
@@ -30,7 +30,7 @@ export default function CookiesPage() {
           <h1 className="text-4xl font-black mb-4">Cookie Policy</h1>
           <p className="text-[#888]">
             ZiggyTech Ventures LLC &mdash; Effective Date: 2026 &mdash;{' '}
-            <span className="text-[#555]">Draft — Attorney review pending</span>
+            <span className="text-[#555]">Draft &mdash; Attorney review pending</span>
           </p>
         </div>
 
@@ -67,7 +67,7 @@ export default function CookiesPage() {
                     <div key={c.name} className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 py-2 border-t border-[#1a1a1a]">
                       <div>
                         <span className="font-mono text-xs text-[#a78bfa]">{c.name}</span>
-                        <span className="text-[#888] text-xs ml-2">— {c.purpose}</span>
+                        <span className="text-[#888] text-xs ml-2">&mdash; {c.purpose}</span>
                       </div>
                       <span className="text-[#555] text-xs shrink-0">{c.duration}</span>
                     </div>
@@ -92,7 +92,7 @@ export default function CookiesPage() {
                     <div key={c.name} className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 py-2 border-t border-[#1a1a1a]">
                       <div>
                         <span className="font-mono text-xs text-[#a78bfa]">{c.name}</span>
-                        <span className="text-[#888] text-xs ml-2">— {c.purpose}</span>
+                        <span className="text-[#888] text-xs ml-2">&mdash; {c.purpose}</span>
                       </div>
                       <span className="text-[#555] text-xs shrink-0">{c.duration}</span>
                     </div>
@@ -171,10 +171,10 @@ export default function CookiesPage() {
                 <h3 className="text-white font-semibold mb-2">California Residents (CCPA/CPRA)</h3>
                 <p className="text-[#888]">
                   To opt out of any sharing of personal information through marketing cookies, email{' '}
-                  <a href="mailto:legal@ziggytechventures.com?subject=CCPA Opt-Out — Cookies" className="text-[#7c3aed] hover:underline">
+                  <a href="mailto:legal@ziggytechventures.com?subject=CCPA Opt-Out &mdash; Cookies" className="text-[#7c3aed] hover:underline">
                     legal@ziggytechventures.com
                   </a>
-                  {' '}with subject &ldquo;CCPA Opt-Out — Cookies.&rdquo; We do not sell personal information.
+                  {' '}with subject &ldquo;CCPA Opt-Out &mdash; Cookies.&rdquo; We do not sell personal information.
                 </p>
               </div>
             </div>
@@ -208,7 +208,7 @@ export default function CookiesPage() {
           <section>
             <h2 className="text-xl font-bold text-white mb-4">5. Contact</h2>
             <div className="bg-[#111] border border-[#222] rounded-xl p-5 text-sm">
-              <p className="text-white font-semibold mb-2">ZiggyTech Ventures LLC — Privacy &amp; Legal Affairs</p>
+              <p className="text-white font-semibold mb-2">ZiggyTech Ventures LLC &mdash; Privacy &amp; Legal Affairs</p>
               <p>
                 Email:{' '}
                 <a href="mailto:legal@ziggytechventures.com" className="text-[#7c3aed] hover:underline">

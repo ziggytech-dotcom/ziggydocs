@@ -6,7 +6,7 @@ import { documentSigningEmailHtml } from '@/lib/emails/documentEmail'
 import { triggerZapierWebhook } from '@/lib/zapier'
 
 export async function POST(req: NextRequest) {
-  // Bearer API key auth — key is the user's Supabase JWT or a service key stored in env
+  // Bearer API key auth -- key is the user's Supabase JWT or a service key stored in env
   const authHeader = req.headers.get('authorization') ?? ''
   if (!authHeader.startsWith('Bearer ')) {
     return Response.json({ error: 'Authorization header with Bearer token required' }, { status: 401 })

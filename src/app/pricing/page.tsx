@@ -106,7 +106,7 @@ export default function PricingPage() {
           <span style={{ color: accent }}>Pricing that makes sense.</span>
         </h1>
         <p className="text-[#b3b3b3] text-lg max-w-xl mx-auto">
-          ZiggyDocs lets you create, send, and collect e-signatures on any document — fast and beautiful.
+          ZiggyDocs lets you create, send, and collect e-signatures on any document &mdash; fast and beautiful.
         </p>
       </section>
 

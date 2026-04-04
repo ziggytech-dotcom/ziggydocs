@@ -37,7 +37,7 @@ export async function GET(
     .order('created_at', { ascending: true })
 
   const fmt = (d: string | null) =>
-    d ? new Date(d).toLocaleString('en-US', { dateStyle: 'long', timeStyle: 'short', timeZone: 'UTC' }) + ' UTC' : '—'
+    d ? new Date(d).toLocaleString('en-US', { dateStyle: 'long', timeStyle: 'short', timeZone: 'UTC' }) + ' UTC' : '--'
 
   const recipientRows = (recipients ?? []).map(r => `
     <tr>
@@ -46,22 +46,22 @@ export async function GET(
       <td>${esc(r.email)}</td>
       <td>${r.signed_at ? `<span class="badge signed">Signed</span>` : `<span class="badge pending">Pending</span>`}</td>
       <td>${fmt(r.signed_at)}</td>
-      <td>${r.ip_address ?? '—'}</td>
+      <td>${r.ip_address ?? '--'}</td>
     </tr>`).join('')
 
   const auditRows = (auditLog ?? []).map(e => `
     <tr>
       <td>${fmt(e.created_at)}</td>
       <td><span class="event">${esc(e.event.replace(/_/g, ' '))}</span></td>
-      <td>${esc(e.actor ?? '—')}</td>
-      <td>${e.ip_address ?? '—'}</td>
+      <td>${esc(e.actor ?? '--')}</td>
+      <td>${e.ip_address ?? '--'}</td>
     </tr>`).join('')
 
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<title>Audit Certificate — ${esc(doc.title)}</title>
+<title>Audit Certificate -- ${esc(doc.title)}</title>
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body { font-family: 'Segoe UI', Arial, sans-serif; color: #111; background: #fff; padding: 40px; }
@@ -120,7 +120,7 @@ export async function GET(
 </table>
 
 <div class="footer">
-  <span>ZiggyDocs — ziggydocs.com</span>
+  <span>ZiggyDocs -- ziggydocs.com</span>
   <span>This certificate is generated for audit and compliance purposes. Electronic signatures are legally binding under the ESIGN Act.</span>
 </div>
 </body>

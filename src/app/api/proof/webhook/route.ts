@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
 
   const admin = createAdminClient()
 
-  // Idempotency — skip if already processed
+  // Idempotency -- skip if already processed
   if (eventId) {
     const { data: existing } = await admin
       .from('zd_webhook_events')
@@ -92,7 +92,7 @@ export async function POST(req: NextRequest) {
           metadata: { proof_transaction_id: transactionId, certificate_url: certificateUrl },
         })
       } else {
-        // cancelled/failed — revert to signed so user can re-request
+        // cancelled/failed -- revert to signed so user can re-request
         await admin
           .from('zd_documents')
           .update({

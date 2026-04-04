@@ -165,7 +165,7 @@ export default function NewDocumentClient({ userId }: { userId: string }) {
           <div className="space-y-6">
             <div>
               <h2 className="text-xl font-bold text-white mb-1">Upload your document</h2>
-              <p className="text-[#888] text-sm">Start with a PDF — you&apos;ll place signature fields in the next step</p>
+              <p className="text-[#888] text-sm">Start with a PDF &mdash; you&apos;ll place signature fields in the next step</p>
             </div>
             <div>
               <label className="block text-xs text-[#888] uppercase tracking-widest mb-1.5">Document Title *</label>
@@ -173,7 +173,7 @@ export default function NewDocumentClient({ userId }: { userId: string }) {
                 type="text"
                 value={title}
                 onChange={e => setTitle(e.target.value)}
-                placeholder="e.g. Service Agreement — Acme Corp"
+                placeholder="e.g. Service Agreement &mdash; Acme Corp"
                 className="w-full bg-[#111] border border-[#222] rounded-xl px-4 py-3 text-white placeholder-[#444] focus:outline-none focus:border-[#7c3aed] transition-colors text-sm"
               />
             </div>
@@ -208,13 +208,13 @@ export default function NewDocumentClient({ userId }: { userId: string }) {
                   <>
                     <FileCheck size={28} className="mx-auto mb-3 text-[#7c3aed]" />
                     <p className="text-white font-medium text-sm">{file.name}</p>
-                    <p className="text-[#888] text-xs mt-1">{(file.size / 1024).toFixed(0)} KB · Click or drag to replace</p>
+                    <p className="text-[#888] text-xs mt-1">{(file.size / 1024).toFixed(0)} KB &middot; Click or drag to replace</p>
                   </>
                 ) : (
                   <>
                     <Upload size={28} className="mx-auto mb-3 text-[#555]" />
                     <p className="text-white font-medium text-sm">Drag & drop your PDF here</p>
-                    <p className="text-[#888] text-xs mt-1.5">or <span className="text-[#7c3aed]">click to browse</span> · PDF only · Max 10MB</p>
+                    <p className="text-[#888] text-xs mt-1.5">or <span className="text-[#7c3aed]">click to browse</span> &middot; PDF only &middot; Max 10MB</p>
                   </>
                 )}
               </div>

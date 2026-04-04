@@ -504,7 +504,7 @@ export default function SigningClient({ doc, token, recipientName, recipientSign
         </div>
       </div>
 
-      {/* Decline modal — slides up from bottom on mobile */}
+      {/* Decline modal &mdash; slides up from bottom on mobile */}
       {showDeclineModal && (
         <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/80 p-0 sm:p-4">
           <div className="bg-[#111] border border-[#222] rounded-t-2xl sm:rounded-2xl w-full sm:max-w-md">
@@ -537,7 +537,7 @@ export default function SigningClient({ doc, token, recipientName, recipientSign
         </div>
       )}
 
-      {/* Signature modal — slides up from bottom on mobile */}
+      {/* Signature modal &mdash; slides up from bottom on mobile */}
       {activeField && (
         <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center bg-black/80 p-0 sm:p-4">
           <div className="bg-[#111] border border-[#222] rounded-t-2xl sm:rounded-2xl w-full sm:max-w-md">

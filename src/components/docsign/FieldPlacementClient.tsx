@@ -485,7 +485,7 @@ export default function FieldPlacementClient({ doc, pdfSignedUrl, backHref = '/d
                             <div className="w-2 h-2 rounded-full shrink-0" style={{ background: borderColor }} />
                             <div className="min-w-0">
                               <p className="text-white truncate">{field.label}</p>
-                              <p className="text-[#555]">Pg {field.page}{signerName ? ` · ${signerName}` : ''}</p>
+                              <p className="text-[#555]">Pg {field.page}{signerName ? ` &middot; ${signerName}` : ''}</p>
                             </div>
                           </div>
                           <span className="text-[#555] shrink-0 ml-1">{idx + 1}</span>

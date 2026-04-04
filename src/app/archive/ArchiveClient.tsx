@@ -160,7 +160,7 @@ export default function ArchiveClient({ docs, total }: { docs: Doc[]; total: num
                   </span>
                 </div>
                 <div className="text-[#888] text-xs">{formatDate(doc.created_at)}</div>
-                <div className="text-[#888] text-xs">{doc.signed_at ? formatDate(doc.signed_at) : '—'}</div>
+                <div className="text-[#888] text-xs">{doc.signed_at ? formatDate(doc.signed_at) : '&mdash;'}</div>
                 <div>
                   <Link href={`/documents/${doc.id}`} className="text-xs text-[#7c3aed] hover:text-[#a78bfa] transition-colors font-medium">
                     View →

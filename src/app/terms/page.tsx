@@ -2,7 +2,7 @@ import Link from 'next/link'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service — ZiggyDocs',
+  title: 'Terms of Service &mdash; ZiggyDocs',
   description: 'The Terms of Service for ZiggyTech Ventures LLC and the ZiggyDocs platform.',
 }
 
@@ -22,14 +22,14 @@ export default function TermsOfServicePage() {
       {/* Content */}
       <main className="max-w-3xl mx-auto px-8 py-12">
         <div className="mb-2 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1a1a1a] border border-[#2d2d2d] text-xs text-[#f59e0b]">
-          ⚠️ Draft — Pending Attorney Review
+          ⚠️ Draft &mdash; Pending Attorney Review
         </div>
 
         <h1 className="mt-4 text-4xl font-bold text-white" style={{ fontFamily: 'var(--font-bebas-neue)', letterSpacing: '0.05em' }}>
           TERMS OF SERVICE
         </h1>
         <p className="text-[#b3b3b3] mt-2 text-sm">
-          ZiggyTech Ventures LLC · Effective Date: [INSERT DATE] · Last Updated: [INSERT DATE]
+          ZiggyTech Ventures LLC &middot; Effective Date: [INSERT DATE] &middot; Last Updated: [INSERT DATE]
         </p>
 
         <div className="mt-10 space-y-8 text-sm leading-relaxed text-[#b3b3b3]">
@@ -44,7 +44,7 @@ export default function TermsOfServicePage() {
             </p>
             <p className="mt-3">
               By accessing, registering for, or using any product or service within the ZiggyTech Business Suite
-              — including ZiggyDocs — you acknowledge that you have read, understood, and agree to be bound by these
+              &mdash; including ZiggyDocs &mdash; you acknowledge that you have read, understood, and agree to be bound by these
               Terms and all policies incorporated herein by reference, including our{' '}
               <Link href="/privacy" className="text-[#7c3aed] hover:underline">Privacy Policy</Link> and{' '}
               <Link href="/cookies" className="text-[#7c3aed] hover:underline">Cookie Policy</Link>.

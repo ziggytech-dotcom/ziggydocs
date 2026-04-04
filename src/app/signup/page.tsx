@@ -38,7 +38,7 @@ export default function SignupPage() {
             <ZiggyDocsLogo size="lg" />
           </Link>
           <h1 className="text-2xl font-bold text-white mb-1">Create your account</h1>
-          <p className="text-[#888] text-sm">Free forever · No credit card required</p>
+          <p className="text-[#888] text-sm">Free forever &middot; No credit card required</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">

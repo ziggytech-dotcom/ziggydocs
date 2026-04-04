@@ -9,9 +9,9 @@ const releases = [
     tag: 'Major',
     tagColor: '#7c3aed',
     changes: [
-      'Bulk send — send one document to hundreds of signers at once',
-      'Sequential signing order — control who signs first',
-      'Document archive — access expired and completed documents',
+      'Bulk send -- send one document to hundreds of signers at once',
+      'Sequential signing order -- control who signs first',
+      'Document archive -- access expired and completed documents',
       'Auto-reminder scheduling improvements',
     ],
   },
@@ -33,7 +33,7 @@ const releases = [
     tag: 'Major',
     tagColor: '#7c3aed',
     changes: [
-      'Template library — save and reuse documents',
+      'Template library -- save and reuse documents',
       'Multi-recipient sending with parallel signing',
       'Certificate of completion PDF download',
       'Full audit trail with IP and timestamp logging',
@@ -56,7 +56,7 @@ const releases = [
     tag: 'Major',
     tagColor: '#7c3aed',
     changes: [
-      'Drag-and-drop field editor — place fields visually on any PDF page',
+      'Drag-and-drop field editor -- place fields visually on any PDF page',
       'Initials and checkbox field types',
       'Signer name pre-fill from send form',
       'Document dashboard with status filters',
@@ -110,7 +110,7 @@ export default function ChangelogPage() {
         </div>
         <h1 className="text-5xl font-black tracking-tight leading-none mb-4">Changelog</h1>
         <p className="text-xl text-[#888] leading-relaxed">
-          Every update, improvement, and fix — in plain English.
+          Every update, improvement, and fix &mdash; in plain English.
         </p>
       </section>
 

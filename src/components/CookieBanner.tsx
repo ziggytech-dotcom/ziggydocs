@@ -12,7 +12,7 @@ export function CookieBanner() {
       const stored = localStorage.getItem(STORAGE_KEY)
       if (!stored) setVisible(true)
     } catch {
-      // localStorage unavailable (private browsing etc.) — don't show
+      // localStorage unavailable (private browsing etc.) &mdash; don't show
     }
   }, [])
 

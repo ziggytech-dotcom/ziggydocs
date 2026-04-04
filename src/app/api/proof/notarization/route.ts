@@ -54,7 +54,7 @@ export async function POST(req: NextRequest) {
     return Response.json({ error: 'No recipients selected for notarization' }, { status: 400 })
   }
 
-  // Call Proof API — create transaction
+  // Call Proof API -- create transaction
   const appUrl = process.env.NEXT_PUBLIC_APP_URL ?? ''
   const proofPayload = {
     account_id,
@@ -65,7 +65,7 @@ export async function POST(req: NextRequest) {
       name: r.name,
       email: r.email,
     })),
-    // documents array — reference by URL or upload separately per Proof docs
+    // documents array -- reference by URL or upload separately per Proof docs
     // For BYOK integrations Proof accepts a document URL
     ...(doc.file_url ? { document_url: doc.file_url } : {}),
   }

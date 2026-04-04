@@ -25,7 +25,7 @@ export async function POST(
     .single()
 
   if (rErr || !recipient) return Response.json({ error: 'Invalid signing link' }, { status: 404 })
-  if (recipient.signed_at) return Response.json({ error: 'Already signed — cannot decline' }, { status: 409 })
+  if (recipient.signed_at) return Response.json({ error: 'Already signed -- cannot decline' }, { status: 409 })
   if (recipient.declined_at) return Response.json({ error: 'Already declined' }, { status: 409 })
 
   const doc = recipient.zd_documents as any

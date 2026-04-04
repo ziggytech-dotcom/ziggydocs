@@ -48,7 +48,7 @@ export function documentSigningEmailHtml({
                   <p style="margin:0;font-size:18px;font-weight:600;color:#ffffff;">${documentTitle}</p>
                 </td></tr>
                 <tr><td style="padding:0 24px 20px;">
-                  <p style="margin:0;font-size:12px;color:#555555;">Prepared by ${senderName} · Expires ${expiresAt}</p>
+                  <p style="margin:0;font-size:12px;color:#555555;">Prepared by ${senderName} &middot; Expires ${expiresAt}</p>
                 </td></tr>
               </table>
               <p style="margin:0 0 24px;font-size:14px;color:#b3b3b3;line-height:1.6;">Please review the document carefully and complete all required signature fields. Your electronic signature is legally binding.</p>
@@ -126,7 +126,7 @@ export function reminderEmailHtml({
                   <p style="margin:0;font-size:18px;font-weight:600;color:#ffffff;">${documentTitle}</p>
                 </td></tr>
                 <tr><td style="padding:0 24px 20px;">
-                  <p style="margin:0;font-size:12px;color:#555555;">Prepared by ${senderName} · Expires ${expiresAt}</p>
+                  <p style="margin:0;font-size:12px;color:#555555;">Prepared by ${senderName} &middot; Expires ${expiresAt}</p>
                 </td></tr>
               </table>
               <table width="100%" cellpadding="0" cellspacing="0">
