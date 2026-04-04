@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ZiggyDocs Blog — Tips, Guides & Insights",
+  title: "ZiggyDocs Blog &mdash; Tips, Guides & Insights",
   description: "Practical guides, how-to articles, and small business tips from the ZiggyDocs team. Learn how to documents & e-sign smarter.",
   robots: { index: true, follow: true },
 };
@@ -22,7 +22,7 @@ export default function BlogPage() {
           The ZiggyDocs Blog
         </h1>
         <p style={{ fontSize: "18px", color: "#888", lineHeight: 1.6, margin: "0 0 40px" }}>
-          Practical guides and how-to articles for small businesses. Topics covering documents & e-sign, team management, and building better workflows — coming soon.
+          Practical guides and how-to articles for small businesses. Topics covering documents & e-sign, team management, and building better workflows &mdash; coming soon.
         </p>
 
         {/* Coming Soon Card */}
@@ -30,13 +30,13 @@ export default function BlogPage() {
           <div style={{ fontSize: "40px", marginBottom: "16px" }}>✍️</div>
           <h2 style={{ fontSize: "22px", fontWeight: 700, color: "#fff", margin: "0 0 12px" }}>Articles coming soon</h2>
           <p style={{ fontSize: "15px", color: "#666", margin: "0 0 28px", lineHeight: 1.6 }}>
-            We're building out our library of guides for small business owners. Check back soon — or start your free trial while you wait.
+            We're building out our library of guides for small business owners. Check back soon &mdash; or start your free trial while you wait.
           </p>
           <a
             href="https://app.ziggydocs.com/signup"
             style={{ display: "inline-block", background: "#7c3aed", color: "#fff", padding: "12px 28px", borderRadius: "8px", fontWeight: 600, fontSize: "15px", textDecoration: "none" }}
           >
-            Start Free Trial — 14 days free
+            Start Free Trial &mdash; 14 days free
           </a>
         </div>
       </section>

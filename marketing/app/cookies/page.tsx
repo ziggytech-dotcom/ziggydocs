@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Cookie Policy — ZiggyDocs",
+  title: "Cookie Policy &mdash; ZiggyDocs",
   description: "ZiggyDocs Cookie Policy. Learn how we use cookies and similar technologies.",
 };
 

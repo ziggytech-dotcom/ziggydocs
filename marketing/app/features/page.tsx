@@ -4,11 +4,11 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Features — ZiggyDocs E-Sign Platform",
+  title: "Features &mdash; ZiggyDocs E-Sign Platform",
   description:
     "Explore all ZiggyDocs features: unlimited documents, drag-and-drop fields, mobile signing, auto-reminders, templates, audit trails, and more. All for $19/mo.",
   openGraph: {
-    title: "Features — ZiggyDocs E-Sign Platform",
+    title: "Features &mdash; ZiggyDocs E-Sign Platform",
     description: "Everything you need to get documents signed fast. All features included at $19/mo.",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
@@ -46,7 +46,7 @@ const categories = [
       {
         icon: "📱",
         title: "Mobile Signing",
-        desc: "Signers can review and sign on any device — smartphone, tablet, or desktop. No app download required. Just click the link.",
+        desc: "Signers can review and sign on any device &mdash; smartphone, tablet, or desktop. No app download required. Just click the link.",
         bullets: ["Works on iOS & Android", "No app download", "Touch-optimized signing", "Email link delivery"],
       },
       {
@@ -70,7 +70,7 @@ const categories = [
       {
         icon: "∞",
         title: "Unlimited Documents",
-        desc: "Send and receive as many documents as you need — no caps, no overage fees, no envelope limits. Just unlimited.",
+        desc: "Send and receive as many documents as you need &mdash; no caps, no overage fees, no envelope limits. Just unlimited.",
         bullets: ["No envelope limits", "No monthly caps", "No overage charges", "Unlimited signers"],
       },
       {
@@ -82,7 +82,7 @@ const categories = [
       {
         icon: "📊",
         title: "Document Dashboard",
-        desc: "See all your documents in one place — draft, sent, pending, and completed. Filter by status, date, or recipient.",
+        desc: "See all your documents in one place &mdash; draft, sent, pending, and completed. Filter by status, date, or recipient.",
         bullets: ["Status at a glance", "Filter and search", "Recipient tracking", "Completion rate stats"],
       },
     ],
@@ -94,13 +94,13 @@ const categories = [
       {
         icon: "📋",
         title: "Certificate of Completion",
-        desc: "Every completed document generates a Certificate of Completion with full signing details — legally binding proof of the transaction.",
+        desc: "Every completed document generates a Certificate of Completion with full signing details &mdash; legally binding proof of the transaction.",
         bullets: ["Signer identity verification", "Timestamp on every action", "IP address logging", "Downloadable PDF certificate"],
       },
       {
         icon: "🔍",
         title: "Full Audit Trail",
-        desc: "ZiggyDocs captures every action taken on every document — when it was sent, opened, and signed — creating an unbreakable chain of custody.",
+        desc: "ZiggyDocs captures every action taken on every document &mdash; when it was sent, opened, and signed &mdash; creating an unbreakable chain of custody.",
         bullets: ["Sent timestamp", "Opened timestamp", "Signed timestamp", "IP address capture"],
       },
       {
@@ -133,7 +133,7 @@ export default function FeaturesPage() {
           <span style={{ color: "#7c3aed" }}>One flat price.</span>
         </h1>
         <p style={{ color: "#a1a1aa", fontSize: "1.125rem", lineHeight: 1.6, marginBottom: "2rem" }}>
-          ZiggyDocs includes every feature at $19/mo — no upsells, no add-ons, no hidden paywalls.
+          ZiggyDocs includes every feature at $19/mo &mdash; no upsells, no add-ons, no hidden paywalls.
         </p>
         <a
           href="https://app.ziggydocs.com/signup"

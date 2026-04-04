@@ -4,12 +4,12 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "E-Sign for Contractors — ZiggyDocs",
+  title: "E-Sign for Contractors &mdash; ZiggyDocs",
   description:
     "ZiggyDocs helps contractors get signed estimates, contracts, and change orders before work begins. $19/mo. Unlimited documents. No more disputes.",
   openGraph: {
-    title: "E-Sign for Contractors — ZiggyDocs",
-    description: "Get signed before you work. Estimates, contracts, change orders — all e-signed for $19/mo.",
+    title: "E-Sign for Contractors &mdash; ZiggyDocs",
+    description: "Get signed before you work. Estimates, contracts, change orders &mdash; all e-signed for $19/mo.",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
@@ -88,9 +88,9 @@ export default function ContractorsPage() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1.25rem" }}>
             {[
               { icon: "📊", title: "Project Estimates", desc: "Send detailed estimates for client approval before any work begins. Get their signature, then schedule." },
-              { icon: "📋", title: "Service Contracts", desc: "Full project contracts with scope, timeline, payment terms, and warranties — signed and stored." },
+              { icon: "📋", title: "Service Contracts", desc: "Full project contracts with scope, timeline, payment terms, and warranties &mdash; signed and stored." },
               { icon: "🔄", title: "Change Orders", desc: "Any scope change, approved in writing. Protect your margins and your reputation." },
-              { icon: "💰", title: "Payment Schedules", desc: "Deposit requests, milestone payments, final invoices — get agreement in writing upfront." },
+              { icon: "💰", title: "Payment Schedules", desc: "Deposit requests, milestone payments, final invoices &mdash; get agreement in writing upfront." },
               { icon: "⚠️", title: "Lien Waivers", desc: "Send and collect lien waivers from subcontractors and suppliers as part of your close-out process." },
               { icon: "🏆", title: "Warranties & Guarantees", desc: "Document your workmanship warranty terms clearly and get client acknowledgment in writing." },
             ].map((uc, i) => (
@@ -112,7 +112,7 @@ export default function ContractorsPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "2rem" }}>
             {[
-              { icon: "📱", title: "Clients sign on their phone", desc: "Text or email a signing link. Clients sign right from their phone — no account, no download, no printer." },
+              { icon: "📱", title: "Clients sign on their phone", desc: "Text or email a signing link. Clients sign right from their phone &mdash; no account, no download, no printer." },
               { icon: "◫", title: "Contract templates ready to go", desc: "Build your standard contract once and reuse it for every job. Customize the scope and send in 2 minutes." },
               { icon: "🔔", title: "Auto-reminders", desc: "If a client hasn't signed, ZiggyDocs nudges them automatically. You stay focused on the work." },
               { icon: "🛡", title: "Legally binding proof", desc: "Every signed document has a timestamp, IP address, and certificate. If there's ever a dispute, you're covered." },
@@ -136,7 +136,7 @@ export default function ContractorsPage() {
           <blockquote style={{ fontSize: "1.25rem", lineHeight: 1.7, color: "#d4d4d8", fontStyle: "italic", marginBottom: "1.5rem" }}>
             I used to print contracts, drive to clients, get them signed, and scan them. Now I send a link from my truck and have a signed contract before I get back to the shop. ZiggyDocs paid for itself on the first job.
           </blockquote>
-          <div style={{ color: "#a1a1aa", fontSize: "0.9375rem" }}>— General contractor, Phoenix AZ</div>
+          <div style={{ color: "#a1a1aa", fontSize: "0.9375rem" }}>&mdash; General contractor, Phoenix AZ</div>
         </div>
       </section>
 

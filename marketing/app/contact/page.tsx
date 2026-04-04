@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Contact — ZiggyDocs",
-  description: "Get in touch with the ZiggyDocs team. Sales, support, billing — we're here to help.",
+  title: "Contact &mdash; ZiggyDocs",
+  description: "Get in touch with the ZiggyDocs team. Sales, support, billing &mdash; we're here to help.",
 }
 
 const ACCENT = "#7c3aed"

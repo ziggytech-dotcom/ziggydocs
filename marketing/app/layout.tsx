@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "ZiggyDocs — E-Sign for $19/mo. Unlimited Documents.",
+    default: "ZiggyDocs &mdash; E-Sign for $19/mo. Unlimited Documents.",
     template: "%s | ZiggyDocs",
   },
   description:
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     siteName: "ZiggyDocs",
-    title: "ZiggyDocs — E-Sign for $19/mo. Unlimited Documents.",
+    title: "ZiggyDocs &mdash; E-Sign for $19/mo. Unlimited Documents.",
     description:
       "Send contracts, get them signed, store them securely. No envelope limits. No per-user fees.",
     images: [
@@ -21,13 +21,13 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "ZiggyDocs — E-Sign Platform",
+        alt: "ZiggyDocs &mdash; E-Sign Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZiggyDocs — E-Sign for $19/mo. Unlimited Documents.",
+    title: "ZiggyDocs &mdash; E-Sign for $19/mo. Unlimited Documents.",
     description:
       "Send contracts, get them signed, store them securely. No envelope limits. No per-user fees.",
     images: ["/og-image.png"],

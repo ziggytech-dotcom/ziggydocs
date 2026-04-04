@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "ZiggyDocs vs PandaDoc — Same power. Half the price.",
-  description: "PandaDoc starts at $35/user/mo. ZiggyDocs gives you the same core features for $25/mo — plus it's part of the ZiggyTech Business Suite.",
+  title: "ZiggyDocs vs PandaDoc &mdash; Same power. Half the price.",
+  description: "PandaDoc starts at $35/user/mo. ZiggyDocs gives you the same core features for $25/mo &mdash; plus it's part of the ZiggyTech Business Suite.",
 }
 
 const ACCENT = "#7c3aed"
@@ -23,11 +23,11 @@ const rows: [string, string, string][] = [
 ]
 
 const bullets = [
-            "PandaDoc charges $35/user/mo — a 3-person team pays $105/mo. ZiggyDocs is $25/mo flat.",
-            "ZiggyDocs has no envelope limits — send as many documents as you need",
-            "ZiggyDocs integrates natively with ZiggyHQ CRM — no Zapier needed",
-            "Custom branding is included in ZiggyDocs from day one — PandaDoc locks it behind Business tier",
-            "ZiggyDocs is part of the ZiggyTech Business Suite — 9 more apps for $179/mo total",
+            "PandaDoc charges $35/user/mo &mdash; a 3-person team pays $105/mo. ZiggyDocs is $25/mo flat.",
+            "ZiggyDocs has no envelope limits &mdash; send as many documents as you need",
+            "ZiggyDocs integrates natively with ZiggyHQ CRM &mdash; no Zapier needed",
+            "Custom branding is included in ZiggyDocs from day one &mdash; PandaDoc locks it behind Business tier",
+            "ZiggyDocs is part of the ZiggyTech Business Suite &mdash; 9 more apps for $179/mo total",
             "Built for small business: faster setup, less complexity than PandaDoc's enterprise feature set",
 ]
 
@@ -76,7 +76,7 @@ export default function VsPandaDoc() {
           display: "inline-block", background: ACCENT, color: "#fff", textDecoration: "none",
           padding: "14px 28px", borderRadius: 10, fontSize: 16, fontWeight: 700,
         }}>
-          Start Free Trial — No credit card required
+          Start Free Trial &mdash; No credit card required
         </a>
       </section>
 
@@ -137,7 +137,7 @@ export default function VsPandaDoc() {
             display: "block", background: ACCENT, color: "#fff", textDecoration: "none",
             padding: "15px", borderRadius: 10, fontSize: 16, fontWeight: 700,
           }}>
-            Start Free Trial — 14 days free
+            Start Free Trial &mdash; 14 days free
           </a>
         </div>
         <div style={{ background: "#0d0d0d", border: "1px solid #1f1f1f", borderRadius: 12, padding: "20px 24px" }}>

@@ -3,7 +3,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — ZiggyDocs",
+  title: "Terms of Service &mdash; ZiggyDocs",
   description: "ZiggyDocs Terms of Service. Your rights and responsibilities when using the ZiggyDocs e-signature platform.",
 };
 

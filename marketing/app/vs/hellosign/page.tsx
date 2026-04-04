@@ -4,11 +4,11 @@ import Navbar from "../../../components/Navbar";
 import Footer from "../../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "ZiggyDocs vs Dropbox Sign (HelloSign) — Better Value at $19/mo",
+  title: "ZiggyDocs vs Dropbox Sign (HelloSign) &mdash; Better Value at $19/mo",
   description:
-    "Compare ZiggyDocs vs Dropbox Sign (HelloSign). ZiggyDocs is $19/mo with unlimited documents — no 10-envelope limits. See the full comparison.",
+    "Compare ZiggyDocs vs Dropbox Sign (HelloSign). ZiggyDocs is $19/mo with unlimited documents &mdash; no 10-envelope limits. See the full comparison.",
   openGraph: {
-    title: "ZiggyDocs vs Dropbox Sign (HelloSign) — Better Value at $19/mo",
+    title: "ZiggyDocs vs Dropbox Sign (HelloSign) &mdash; Better Value at $19/mo",
     description: "ZiggyDocs gives you unlimited documents at $19/mo. Dropbox Sign limits you to 10 envelopes.",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
@@ -23,9 +23,9 @@ const comparison = [
   { feature: "Auto-reminders", ziggydocs: "✓ Included", competitor: "✓ Included" },
   { feature: "Audit trail", ziggydocs: "✓ Included", competitor: "✓ Included" },
   { feature: "Certificate of completion", ziggydocs: "✓ Included", competitor: "✓ Included" },
-  { feature: "Dropbox integration", ziggydocs: "—", competitor: "✓ Deep integration" },
+  { feature: "Dropbox integration", ziggydocs: "&mdash;", competitor: "✓ Deep integration" },
   { feature: "API access", ziggydocs: "Coming soon", competitor: "✓ (Standard plan+)" },
-  { feature: "Annual savings vs $19/mo", ziggydocs: "—", competitor: "Pay $72+ more/yr" },
+  { feature: "Annual savings vs $19/mo", ziggydocs: "&mdash;", competitor: "Pay $72+ more/yr" },
 ];
 
 export default function VsHelloSignPage() {
@@ -72,7 +72,7 @@ export default function VsHelloSignPage() {
           </h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "1.25rem" }}>
             {[
-              { icon: "📦", title: "10-document cap", desc: "The Essentials plan limits you to 10 envelopes per month — even at $25/mo. Need more? Pay more." },
+              { icon: "📦", title: "10-document cap", desc: "The Essentials plan limits you to 10 envelopes per month &mdash; even at $25/mo. Need more? Pay more." },
               { icon: "◨", title: "Only 1 template", desc: "The Essentials plan includes just one reusable template. Every additional template costs extra." },
               { icon: "📦", title: "Dropbox dependency", desc: "Optimized for Dropbox users. If you don't use Dropbox, you're paying for integrations you'll never use." },
               { icon: "💸", title: "Price creep", desc: "As you grow, Dropbox Sign pricing escalates quickly. More users, more documents, more cost." },
@@ -146,7 +146,7 @@ export default function VsHelloSignPage() {
             </div>
           </div>
           <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
-            <div style={{ fontSize: "1.25rem", fontWeight: 700, color: "#7c3aed" }}>Save $72/year — and get unlimited documents</div>
+            <div style={{ fontSize: "1.25rem", fontWeight: 700, color: "#7c3aed" }}>Save $72/year &mdash; and get unlimited documents</div>
           </div>
         </div>
       </section>
@@ -160,9 +160,9 @@ export default function VsHelloSignPage() {
           <div style={{ display: "flex", flexDirection: "column", gap: "1.25rem" }}>
             {[
               { step: "1", title: "Export your documents", desc: "Download your completed documents from Dropbox Sign before cancelling." },
-              { step: "2", title: "Sign up for ZiggyDocs", desc: "Free trial at app.ziggydocs.com — 14 days, no credit card." },
+              { step: "2", title: "Sign up for ZiggyDocs", desc: "Free trial at app.ziggydocs.com &mdash; 14 days, no credit card." },
               { step: "3", title: "Upload your templates", desc: "Recreate your templates in ZiggyDocs. With unlimited templates included, there's no reason to hold back." },
-              { step: "4", title: "Go live", desc: "Start sending documents. Recipients sign via email link — no account needed." },
+              { step: "4", title: "Go live", desc: "Start sending documents. Recipients sign via email link &mdash; no account needed." },
               { step: "5", title: "Cancel Dropbox Sign", desc: "Cancel at the end of your billing cycle and enjoy the savings." },
             ].map((s, i) => (
               <div key={i} style={{ display: "flex", gap: "1.25rem", alignItems: "flex-start" }}>

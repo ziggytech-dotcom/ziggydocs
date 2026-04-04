@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Changelog — ZiggyDocs",
+  title: "Changelog &mdash; ZiggyDocs",
   description: "What's new in ZiggyDocs. Feature updates, improvements, and release notes.",
 }
 
@@ -32,7 +32,7 @@ export default function ChangelogPage() {
       <section style={{ padding: "80px 24px 40px", textAlign: "center", maxWidth: 680, margin: "0 auto" }}>
         <h1 style={{ fontSize: "clamp(36px,5vw,52px)", fontWeight: 700, letterSpacing: "-1.5px", marginBottom: 16 }}>What's New</h1>
         <p style={{ fontSize: 17, color: "#777", lineHeight: 1.6 }}>
-          New features, improvements, and fixes — straight from the team.
+          New features, improvements, and fixes &mdash; straight from the team.
         </p>
       </section>
 
@@ -76,7 +76,7 @@ export default function ChangelogPage() {
             </div>
             <div style={{ background: "#0d0d0d", border: "1px solid #1a1a1a", borderRadius: 16, padding: "24px 28px" }}>
               <p style={{ fontSize: 14, color: "#555", lineHeight: 1.7 }}>
-                We ship fast. More updates coming soon — follow us on 
+                We ship fast. More updates coming soon &mdash; follow us on 
                 <a href="https://x.com/ziggybusiness" style={{ color: ACCENT, textDecoration: "none" }}>X</a> 
                 or subscribe to our 
                 <a href="/blog" style={{ color: ACCENT, textDecoration: "none" }}>blog</a> 

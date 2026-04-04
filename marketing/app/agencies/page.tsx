@@ -4,12 +4,12 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "E-Sign for Agencies — ZiggyDocs",
+  title: "E-Sign for Agencies &mdash; ZiggyDocs",
   description:
     "ZiggyDocs helps agencies get client contracts, SOWs, and NDAs signed fast. $19/mo. Unlimited documents. Professional, branded signing experience.",
   openGraph: {
-    title: "E-Sign for Agencies — ZiggyDocs",
-    description: "Get client contracts, SOWs, and NDAs signed in minutes. ZiggyDocs for agencies — $19/mo.",
+    title: "E-Sign for Agencies &mdash; ZiggyDocs",
+    description: "Get client contracts, SOWs, and NDAs signed in minutes. ZiggyDocs for agencies &mdash; $19/mo.",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
 };
@@ -41,7 +41,7 @@ export default function AgenciesPage() {
           <span style={{ color: "#7c3aed" }}>before the kickoff call</span>
         </h1>
         <p style={{ color: "#a1a1aa", fontSize: "1.125rem", lineHeight: 1.6, marginBottom: "2rem", maxWidth: "620px", margin: "0 auto 2rem" }}>
-          Stop chasing clients for signatures on SOWs, NDAs, and retainer agreements. ZiggyDocs makes it fast, professional, and legally binding — at a price that doesn&apos;t hurt.
+          Stop chasing clients for signatures on SOWs, NDAs, and retainer agreements. ZiggyDocs makes it fast, professional, and legally binding &mdash; at a price that doesn&apos;t hurt.
         </p>
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center", flexWrap: "wrap" }}>
           <a
@@ -92,7 +92,7 @@ export default function AgenciesPage() {
               {
                 icon: "∞",
                 title: "Unlimited documents",
-                desc: "Run 10 clients? 50 clients? Send as many contracts, SOWs, and change orders as you need — no per-envelope charges.",
+                desc: "Run 10 clients? 50 clients? Send as many contracts, SOWs, and change orders as you need &mdash; no per-envelope charges.",
               },
               {
                 icon: "◫",
@@ -167,7 +167,7 @@ export default function AgenciesPage() {
           <blockquote style={{ fontSize: "1.25rem", lineHeight: 1.7, color: "#d4d4d8", fontStyle: "italic", marginBottom: "1.5rem" }}>
             We run 30+ active clients and were spending $120/mo on DocuSign to cover the envelopes. ZiggyDocs cut that to $19/mo with zero limits. The templates alone save us 2 hours every week.
           </blockquote>
-          <div style={{ color: "#a1a1aa", fontSize: "0.9375rem" }}>— Digital marketing agency owner, Austin TX</div>
+          <div style={{ color: "#a1a1aa", fontSize: "0.9375rem" }}>&mdash; Digital marketing agency owner, Austin TX</div>
         </div>
       </section>
 

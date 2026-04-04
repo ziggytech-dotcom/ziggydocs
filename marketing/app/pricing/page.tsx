@@ -4,11 +4,11 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Pricing — ZiggyDocs $25/mo Flat",
+  title: "Pricing &mdash; ZiggyDocs $25/mo Flat",
   description:
     "ZiggyDocs is $25/mo. All features included. Unlimited documents. No per-user fees. 14-day free trial, no credit card required.",
   openGraph: {
-    title: "Pricing — ZiggyDocs $25/mo Flat",
+    title: "Pricing &mdash; ZiggyDocs $25/mo Flat",
     description: "One plan. Everything included. $25/mo. Start free for 14 days.",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
@@ -34,7 +34,7 @@ const allFeatures = [
 const faqs = [
   {
     q: "How does the free trial work?",
-    a: "Your 14-day free trial gives you full access to every ZiggyDocs feature — no restrictions. No credit card required to start. At the end of the trial, you can choose to subscribe or your account will automatically pause.",
+    a: "Your 14-day free trial gives you full access to every ZiggyDocs feature &mdash; no restrictions. No credit card required to start. At the end of the trial, you can choose to subscribe or your account will automatically pause.",
   },
   {
     q: "Can I cancel anytime?",
@@ -42,11 +42,11 @@ const faqs = [
   },
   {
     q: "Are there really no envelope limits?",
-    a: "None. Zero. Zip. $25/mo gives you truly unlimited documents — send as many contracts, agreements, and forms as you need. Unlike DocuSign's basic plan (10 envelopes/month), ZiggyDocs never caps you.",
+    a: "None. Zero. Zip. $25/mo gives you truly unlimited documents &mdash; send as many contracts, agreements, and forms as you need. Unlike DocuSign's basic plan (10 envelopes/month), ZiggyDocs never caps you.",
   },
   {
     q: "How many team members can use ZiggyDocs?",
-    a: "Currently ZiggyDocs is optimized for individual professionals and small teams. The $25/mo plan covers your account. Team/multi-seat plans are coming soon — join the waitlist from your dashboard.",
+    a: "Currently ZiggyDocs is optimized for individual professionals and small teams. The $25/mo plan covers your account. Team/multi-seat plans are coming soon &mdash; join the waitlist from your dashboard.",
   },
   {
     q: "Are ZiggyDocs signatures legally valid?",
@@ -58,7 +58,7 @@ const faqs = [
   },
   {
     q: "Do signers need a ZiggyDocs account?",
-    a: "No. Recipients receive a link via email and can review and sign directly in their browser — no account, no download, no friction.",
+    a: "No. Recipients receive a link via email and can review and sign directly in their browser &mdash; no account, no download, no friction.",
   },
 ];
 
@@ -103,7 +103,7 @@ export default function PricingPage() {
                 marginBottom: "1.5rem",
               }}
             >
-              ✦ Most popular (only option — because it&apos;s enough)
+              ✦ Most popular (only option &mdash; because it&apos;s enough)
             </div>
           </div>
 
@@ -157,7 +157,7 @@ export default function PricingPage() {
         >
           <div style={{ fontWeight: 700, fontSize: "1rem", marginBottom: "0.5rem" }}>🧰 Better together</div>
           <p style={{ color: "#a1a1aa", fontSize: "0.9375rem", marginBottom: "0.75rem" }}>
-            ZiggyDocs is part of the ZiggyTech Business Suite — a set of affordable tools built for small business owners.
+            ZiggyDocs is part of the ZiggyTech Business Suite &mdash; a set of affordable tools built for small business owners.
           </p>
           <a href="https://ziggybusiness.com" style={{ color: "#7c3aed", textDecoration: "none", fontWeight: 600, fontSize: "0.9375rem" }}>
             Explore the ZiggyTech suite → ziggybusiness.com

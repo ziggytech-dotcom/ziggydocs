@@ -45,7 +45,7 @@ const jsonLd = {
           "name": "Do my clients need a ZiggyDocs account to sign?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No. Your clients receive a link and sign directly in their browser — no account, no app download, no friction."
+            "text": "No. Your clients receive a link and sign directly in their browser &mdash; no account, no app download, no friction."
           }
         }
       ]
@@ -152,7 +152,7 @@ export default function Home() {
         </h1>
 
         <p style={{ fontSize: 19, color: "#888", lineHeight: 1.6, marginBottom: 40, maxWidth: 580, margin: "0 auto 40px" }}>
-          DocuSign charges $45/mo and counts every envelope. ZiggyDocs gives you unlimited documents, reusable templates, e-signatures with audit trail, and a client portal for <strong style={{ color: "#fff" }}>$25/mo</strong> — no gotchas.
+          DocuSign charges $45/mo and counts every envelope. ZiggyDocs gives you unlimited documents, reusable templates, e-signatures with audit trail, and a client portal for <strong style={{ color: "#fff" }}>$25/mo</strong> &mdash; no gotchas.
         </p>
 
         <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap", marginBottom: 20 }}>
@@ -165,7 +165,7 @@ export default function Home() {
             fontSize: 16,
             fontWeight: 600,
           }}>
-            Start Free Trial — 14 days free
+            Start Free Trial &mdash; 14 days free
           </a>
           <a href="#features" style={{
             background: "transparent",
@@ -207,7 +207,7 @@ export default function Home() {
             {
               emoji: "📩",
               headline: "DocuSign charges you per envelope.",
-              body: "Every document sent counts against your monthly limit. Go over and you pay overage fees. That's not a document platform — that's a meter running.",
+              body: "Every document sent counts against your monthly limit. Go over and you pay overage fees. That's not a document platform &mdash; that's a meter running.",
             },
             {
               emoji: "🗂️",
@@ -217,7 +217,7 @@ export default function Home() {
             {
               emoji: "😩",
               headline: "Clients hate the signing experience.",
-              body: "Forcing clients to create a DocuSign account just to sign your NDA adds friction and delays. Your clients want to sign and move on — not set up another login.",
+              body: "Forcing clients to create a DocuSign account just to sign your NDA adds friction and delays. Your clients want to sign and move on &mdash; not set up another login.",
             },
           ].map(({ emoji, headline, body }) => (
             <div key={headline}>
@@ -236,7 +236,7 @@ export default function Home() {
             Everything you need to send, sign, and store.
           </h2>
           <p style={{ fontSize: 17, color: "#666", maxWidth: 500, margin: "0 auto" }}>
-            Built for businesses that send contracts, agreements, and forms — without the enterprise complexity or enterprise pricing.
+            Built for businesses that send contracts, agreements, and forms &mdash; without the enterprise complexity or enterprise pricing.
           </p>
         </div>
 
@@ -249,17 +249,17 @@ export default function Home() {
             {
               icon: "🖱️",
               title: "Drag-and-Drop Document Builder",
-              desc: "Build contracts and forms visually. Place signature fields, date fields, initials, text inputs — anywhere on the page. No code, no formatting headaches.",
+              desc: "Build contracts and forms visually. Place signature fields, date fields, initials, text inputs &mdash; anywhere on the page. No code, no formatting headaches.",
             },
             {
               icon: "✍️",
               title: "E-Signature with Audit Trail",
-              desc: "Legally binding e-signatures on every document. Every action — opened, viewed, signed — is timestamped and stored in an immutable audit log.",
+              desc: "Legally binding e-signatures on every document. Every action &mdash; opened, viewed, signed &mdash; is timestamped and stored in an immutable audit log.",
             },
             {
               icon: "📄",
               title: "Reusable Templates",
-              desc: "Build once, send forever. Create templates for your most-used docs — contracts, NDAs, SOWs, proposals — and send them in seconds without reformatting.",
+              desc: "Build once, send forever. Create templates for your most-used docs &mdash; contracts, NDAs, SOWs, proposals &mdash; and send them in seconds without reformatting.",
             },
             {
               icon: "📨",
@@ -284,12 +284,12 @@ export default function Home() {
             {
               icon: "🎨",
               title: "Custom Branding on Signing Pages",
-              desc: "Your logo, your colors on the signing experience. Clients see your brand — not DocuSign's. Looks professional. Builds trust.",
+              desc: "Your logo, your colors on the signing experience. Clients see your brand &mdash; not DocuSign's. Looks professional. Builds trust.",
             },
             {
               icon: "⬇️",
               title: "Download Signed PDFs Instantly",
-              desc: "As soon as everyone signs, download the completed PDF in one click. Share with clients, file it, or send it somewhere else — immediately.",
+              desc: "As soon as everyone signs, download the completed PDF in one click. Share with clients, file it, or send it somewhere else &mdash; immediately.",
             },
           ].map(({ icon, title, desc }) => (
             <div key={title} style={{
@@ -337,14 +337,14 @@ export default function Home() {
                 title: "Conditional Fields",
                 badge: "In Development",
                 badgeColor: "#ff9500",
-                desc: "Show or hide form fields based on signer answers. Build smarter documents that adapt — intake forms, contracts with optional clauses, custom agreements.",
+                desc: "Show or hide form fields based on signer answers. Build smarter documents that adapt &mdash; intake forms, contracts with optional clauses, custom agreements.",
               },
               {
                 icon: "💳",
                 title: "Payment Collection on Signing",
                 badge: "Coming Soon",
                 badgeColor: "#0066ff",
-                desc: "Collect a deposit or full payment the moment someone signs. No extra invoicing step — get the signature and the money in one flow.",
+                desc: "Collect a deposit or full payment the moment someone signs. No extra invoicing step &mdash; get the signature and the money in one flow.",
               },
             ].map(({ icon, title, badge, badgeColor, desc }) => (
               <div key={title} style={{
@@ -388,7 +388,7 @@ export default function Home() {
               Built for your industry
             </h2>
             <p style={{ fontSize: 17, color: "#666", maxWidth: 500, margin: "0 auto" }}>
-              Any business that sends documents for signature — this is built for you.
+              Any business that sends documents for signature &mdash; this is built for you.
             </p>
           </div>
 
@@ -399,10 +399,10 @@ export default function Home() {
             marginBottom: 40,
           }}>
             {[
-              { icon: "🏠", name: "Real Estate", desc: "Purchase agreements, lease agreements, disclosure forms, and buyer representation contracts — all digital." },
+              { icon: "🏠", name: "Real Estate", desc: "Purchase agreements, lease agreements, disclosure forms, and buyer representation contracts &mdash; all digital." },
               { icon: "🏗️", name: "Contractors", desc: "Project contracts, change orders, lien waivers, and subcontractor agreements. Get them signed before work starts." },
               { icon: "🎨", name: "Creative Agencies", desc: "SOWs, client agreements, licensing contracts, and project proposals. Your agreements, branded and professional." },
-              { icon: "💼", name: "Consulting & Professional Services", desc: "Engagement letters, NDAs, retainer agreements — send and sign in minutes, not days." },
+              { icon: "💼", name: "Consulting & Professional Services", desc: "Engagement letters, NDAs, retainer agreements &mdash; send and sign in minutes, not days." },
               { icon: "🏥", name: "Healthcare", desc: "Patient intake forms, consent forms, and HIPAA acknowledgments. Collect signatures before the appointment." },
               { icon: "🎓", name: "Coaching & Education", desc: "Enrollment agreements, liability waivers, and program contracts. Onboard clients without the paperwork chase." },
               { icon: "🏢", name: "Property Management", desc: "Lease agreements, vendor contracts, and inspection reports. Tenants and vendors sign without visiting your office." },
@@ -440,7 +440,7 @@ export default function Home() {
             <div>
               <h3 style={{ fontSize: 18, fontWeight: 700, color: "#fff", marginBottom: 6 }}>Need custom templates for your workflow?</h3>
               <p style={{ fontSize: 15, color: "#888", maxWidth: 480, lineHeight: 1.6, margin: 0 }}>
-                Our team will help you set up the exact document templates your business uses every day — ready to send on day one.
+                Our team will help you set up the exact document templates your business uses every day &mdash; ready to send on day one.
               </p>
             </div>
             <a href="https://app.ziggydocs.com/signup" style={{
@@ -489,11 +489,11 @@ export default function Home() {
                 ["Bulk send", "✅ Pro plan", "⚠️ Business plan only"],
                 ["Audit trail", "✅ Pro plan", "✅ Yes"],
                 ["Custom branding", "✅ Pro plan", "⚠️ Business plan only"],
-                ["Client portal (no account)", "✅ Yes — signers click and sign", "⚠️ Signers often need account"],
+                ["Client portal (no account)", "✅ Yes &mdash; signers click and sign", "⚠️ Signers often need account"],
                 ["Automatic reminders", "✅ Yes", "✅ Yes"],
                 ["Folder organization", "✅ Pro plan", "✅ Yes"],
                 ["Free trial", "✅ 14 days, no credit card", "✅ 30 days"],
-                ["Annual contract", "❌ No — cancel anytime", "⚠️ Annual required for best rates"],
+                ["Annual contract", "❌ No &mdash; cancel anytime", "⚠️ Annual required for best rates"],
                 ["CRM integration", "🔧 Coming soon", "✅ Via Salesforce/HubSpot"],
                 ["Payment on signing", "🔧 Coming soon", "⚠️ Payments add-on"],
               ].map(([feature, ziggydocs, docusign], i) => (
@@ -515,7 +515,7 @@ export default function Home() {
           padding: "24px 28px",
         }}>
           <p style={{ fontSize: 15, color: "#888", lineHeight: 1.7, margin: 0 }}>
-            <strong style={{ color: "#fff" }}>Bottom line:</strong> DocuSign charges $45/mo and counts every envelope. We don&apos;t count envelopes. Pro plan at $25/mo — unlimited documents, unlimited templates, unlimited clients. 44% cheaper with no gotchas.{" "}
+            <strong style={{ color: "#fff" }}>Bottom line:</strong> DocuSign charges $45/mo and counts every envelope. We don&apos;t count envelopes. Pro plan at $25/mo &mdash; unlimited documents, unlimited templates, unlimited clients. 44% cheaper with no gotchas.{" "}
             <a href="/vs/docusign" style={{ color: accent, textDecoration: "underline" }}>See full comparison →</a>
           </p>
         </div>
@@ -666,7 +666,7 @@ export default function Home() {
           {[
             {
               q: "Do my clients need a ZiggyDocs account to sign?",
-              a: "No. Your clients receive a link and sign directly in their browser — no account, no app download, no friction. That's how it should work.",
+              a: "No. Your clients receive a link and sign directly in their browser &mdash; no account, no app download, no friction. That's how it should work.",
             },
             {
               q: "Are the signatures legally binding?",
@@ -674,7 +674,7 @@ export default function Home() {
             },
             {
               q: "What's the difference between Starter and Pro?",
-              a: "Starter is $15/mo and includes 5 templates and 30 documents per month — enough for most small businesses getting started. Pro is $25/mo and removes all limits: unlimited templates, unlimited documents, bulk send, custom branding, audit trail, and folder organization. Most businesses upgrade to Pro within their first month.",
+              a: "Starter is $15/mo and includes 5 templates and 30 documents per month &mdash; enough for most small businesses getting started. Pro is $25/mo and removes all limits: unlimited templates, unlimited documents, bulk send, custom branding, audit trail, and folder organization. Most businesses upgrade to Pro within their first month.",
             },
             {
               q: "How does bulk send work?",
@@ -682,11 +682,11 @@ export default function Home() {
             },
             {
               q: "How does the free trial work?",
-              a: "Sign up and get 14 days free — no credit card required. Full access to Pro features during the trial. If you decide not to continue, just don't. Nothing to cancel.",
+              a: "Sign up and get 14 days free &mdash; no credit card required. Full access to Pro features during the trial. If you decide not to continue, just don't. Nothing to cancel.",
             },
             {
               q: "Can I use my own branding on signing pages?",
-              a: "Yes — on the Pro plan. Upload your logo and set your brand colors. Your clients see your brand throughout the signing experience, not ours.",
+              a: "Yes &mdash; on the Pro plan. Upload your logo and set your brand colors. Your clients see your brand throughout the signing experience, not ours.",
             },
           ].map(({ q, a }) => (
             <details key={q} style={{

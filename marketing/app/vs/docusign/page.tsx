@@ -3,7 +3,7 @@ import Script from "next/script"
 const accent = "#7c3aed"
 
 export const metadata = {
-  title: "ZiggyDocs vs DocuSign — $25/mo vs $45/mo. Unlimited Documents. No Envelope Limits.",
+  title: "ZiggyDocs vs DocuSign &mdash; $25/mo vs $45/mo. Unlimited Documents. No Envelope Limits.",
   description:
     "DocuSign counts every envelope and charges $45/mo. ZiggyDocs gives you unlimited documents, unlimited templates, and custom branding for $25/mo.",
 }
@@ -90,14 +90,14 @@ export default function VsDocuSign() {
         </h1>
 
         <p style={{ fontSize: 18, color: "#888", lineHeight: 1.6, maxWidth: 620, margin: "0 auto 32px" }}>
-          DocuSign charges $45/mo and counts every envelope. We don&apos;t count envelopes. Pro plan at $25/mo — unlimited documents, unlimited templates, unlimited clients. 44% cheaper with no gotchas.
+          DocuSign charges $45/mo and counts every envelope. We don&apos;t count envelopes. Pro plan at $25/mo &mdash; unlimited documents, unlimited templates, unlimited clients. 44% cheaper with no gotchas.
         </p>
 
         <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
           <a href="https://app.ziggydocs.com/signup" style={{
             background: accent, color: "#fff", textDecoration: "none",
             padding: "14px 28px", borderRadius: 10, fontSize: 15, fontWeight: 600,
-          }}>Start Free Trial — No credit card</a>
+          }}>Start Free Trial &mdash; No credit card</a>
           <a href="/#pricing" style={{
             background: "transparent", color: "#fff", textDecoration: "none",
             padding: "14px 28px", borderRadius: 10, fontSize: 15, fontWeight: 600,
@@ -122,8 +122,8 @@ export default function VsDocuSign() {
           textAlign: "center",
         }}>
           {[
-            { label: "ZiggyDocs Pro — Unlimited Everything", price: "$25/mo", sub: "14-day free trial, no card required", highlight: true },
-            { label: "DocuSign Personal — 10 envelopes/mo", price: "$45/mo", sub: "Annual contract for best rates", highlight: false },
+            { label: "ZiggyDocs Pro &mdash; Unlimited Everything", price: "$25/mo", sub: "14-day free trial, no card required", highlight: true },
+            { label: "DocuSign Personal &mdash; 10 envelopes/mo", price: "$45/mo", sub: "Annual contract for best rates", highlight: false },
             { label: "You save per month", price: "$20/mo", sub: "That's $240/year back in your pocket", highlight: true },
           ].map(({ label, price, sub, highlight }) => (
             <div key={label} style={{
@@ -151,7 +151,7 @@ export default function VsDocuSign() {
           gap: 20,
         }}>
           {[
-            { icon: "📊", headline: "They count every envelope", body: "DocuSign Personal limits you to 10 envelopes per month. Send your 11th document and you either upgrade or wait until next month. That's not a feature — that's artificial scarcity." },
+            { icon: "📊", headline: "They count every envelope", body: "DocuSign Personal limits you to 10 envelopes per month. Send your 11th document and you either upgrade or wait until next month. That's not a feature &mdash; that's artificial scarcity." },
             { icon: "💰", headline: "Price jumps are brutal", body: "Personal is $45/mo for 10 envelopes. Standard is $65/mo. Business Pro is $99/mo. Every time you need one more thing, the price jumps significantly." },
             { icon: "🔐", headline: "Signers need accounts", body: "DocuSign sometimes requires signers to create an account just to view and sign a document. That creates friction, delays, and abandoned signings." },
           ].map(({ icon, headline, body }) => (
@@ -193,14 +193,14 @@ export default function VsDocuSign() {
                 ["Monthly price", "$25/mo", "$45/mo"],
                 ["Documents per month", "Unlimited", "10 envelopes/mo"],
                 ["Templates", "Unlimited", "5 templates"],
-                ["Annual contract required", "❌ No — monthly, cancel anytime", "⚠️ Annual for best rates"],
+                ["Annual contract required", "❌ No &mdash; monthly, cancel anytime", "⚠️ Annual for best rates"],
                 ["Free trial", "✅ 14 days, no credit card", "✅ 30 days"],
                 ["E-signature (legally binding)", "✅ Yes", "✅ Yes"],
                 ["Audit trail", "✅ Yes", "✅ Yes"],
                 ["Drag-and-drop builder", "✅ Yes", "✅ Yes"],
                 ["Bulk send", "✅ Yes", "❌ Business Pro only"],
                 ["Custom branding", "✅ Yes", "❌ Business Pro only"],
-                ["Client signing (no account needed)", "✅ Yes — always", "⚠️ Sometimes requires account"],
+                ["Client signing (no account needed)", "✅ Yes &mdash; always", "⚠️ Sometimes requires account"],
                 ["Automatic reminders", "✅ Yes", "✅ Yes"],
                 ["Folder organization", "✅ Yes", "✅ Yes"],
                 ["Download signed PDFs", "✅ Instant", "✅ Yes"],
@@ -232,7 +232,7 @@ export default function VsDocuSign() {
         <div style={{ maxWidth: 740, margin: "0 auto", textAlign: "center" }}>
           <h2 style={{ fontSize: "clamp(26px, 3vw, 36px)", fontWeight: 700, marginBottom: 20, color: "#fff" }}>The verdict</h2>
           <p style={{ fontSize: 17, color: "#888", lineHeight: 1.8 }}>
-            DocuSign is the market leader for a reason — it&apos;s powerful, established, and legally trusted. But it was built for enterprises that send hundreds of documents a month with complex compliance requirements. If you&apos;re a small business sending contracts, NDAs, and agreements, you&apos;re massively overpaying. ZiggyDocs gives you everything you actually need — unlimited documents, reusable templates, e-signatures with audit trail, and a professional signing experience — at 44% less per month.
+            DocuSign is the market leader for a reason &mdash; it&apos;s powerful, established, and legally trusted. But it was built for enterprises that send hundreds of documents a month with complex compliance requirements. If you&apos;re a small business sending contracts, NDAs, and agreements, you&apos;re massively overpaying. ZiggyDocs gives you everything you actually need &mdash; unlimited documents, reusable templates, e-signatures with audit trail, and a professional signing experience &mdash; at 44% less per month.
           </p>
           <div style={{ marginTop: 36 }}>
             <a href="https://app.ziggydocs.com/signup" style={{

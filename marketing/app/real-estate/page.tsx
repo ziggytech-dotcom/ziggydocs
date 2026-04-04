@@ -4,11 +4,11 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
-  title: "E-Sign for Real Estate Agents — ZiggyDocs",
+  title: "E-Sign for Real Estate Agents &mdash; ZiggyDocs",
   description:
     "ZiggyDocs is built for real estate agents. Send listing agreements, offers, and disclosures for $19/mo. Unlimited documents. Mobile signing. Legally binding.",
   openGraph: {
-    title: "E-Sign for Real Estate Agents — ZiggyDocs",
+    title: "E-Sign for Real Estate Agents &mdash; ZiggyDocs",
     description: "Get listing agreements, offers, and disclosures signed fast. Unlimited documents for $19/mo.",
     images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
@@ -66,7 +66,7 @@ export default function RealEstatePage() {
             {[
               { icon: "📋", title: "Listing Agreements", desc: "Send listing agreements to sellers and get signatures before you leave their home. Works on any device." },
               { icon: "🏡", title: "Purchase Offers", desc: "Send and counter offers in real time. Don't miss a deal because you couldn't get a signature fast enough." },
-              { icon: "📄", title: "Disclosure Forms", desc: "Send required disclosures — seller disclosures, lead paint, HOA docs — and track who's signed what." },
+              { icon: "📄", title: "Disclosure Forms", desc: "Send required disclosures &mdash; seller disclosures, lead paint, HOA docs &mdash; and track who's signed what." },
               { icon: "🤝", title: "Buyer Representation", desc: "Get buyer rep agreements signed before showing houses. Keep it legal and professional from day one." },
               { icon: "🔑", title: "Lease Agreements", desc: "For agents handling rentals, get leases signed by all parties quickly and securely." },
               { icon: "✏️", title: "Addendums & Amendments", desc: "Things change. Send amendments and addendums instantly and get them signed before it holds up a close." },
@@ -92,7 +92,7 @@ export default function RealEstatePage() {
               {
                 icon: "📱",
                 title: "Mobile signing for buyers & sellers",
-                desc: "Your clients can sign from their phone — sitting at an open house, in their car, or at the kitchen table. No app download, no account needed.",
+                desc: "Your clients can sign from their phone &mdash; sitting at an open house, in their car, or at the kitchen table. No app download, no account needed.",
               },
               {
                 icon: "∞",
@@ -112,12 +112,12 @@ export default function RealEstatePage() {
               {
                 icon: "🛡",
                 title: "Legally binding audit trail",
-                desc: "Every signature includes a timestamp, IP address, and certificate of completion — protection for you and your clients.",
+                desc: "Every signature includes a timestamp, IP address, and certificate of completion &mdash; protection for you and your clients.",
               },
               {
                 icon: "💰",
-                title: "Flat $19/mo — no per-transaction fees",
-                desc: "DocuSign and others charge per envelope. ZiggyDocs charges a flat rate. Do 5 transactions or 50 — same price.",
+                title: "Flat $19/mo &mdash; no per-transaction fees",
+                desc: "DocuSign and others charge per envelope. ZiggyDocs charges a flat rate. Do 5 transactions or 50 &mdash; same price.",
               },
             ].map((f, i) => (
               <div key={i} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
@@ -139,7 +139,7 @@ export default function RealEstatePage() {
           <blockquote style={{ fontSize: "1.25rem", lineHeight: 1.7, color: "#d4d4d8", fontStyle: "italic", marginBottom: "1.5rem" }}>
             I was paying DocuSign $45/month and hitting the envelope limit every single month. With ZiggyDocs I switched to $19/mo and send as many documents as I need. The templates save me an hour a week.
           </blockquote>
-          <div style={{ color: "#a1a1aa", fontSize: "0.9375rem" }}>— Real estate agent, Las Vegas NV</div>
+          <div style={{ color: "#a1a1aa", fontSize: "0.9375rem" }}>&mdash; Real estate agent, Las Vegas NV</div>
         </div>
       </section>
 
