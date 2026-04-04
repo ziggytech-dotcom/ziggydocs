@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 // Called by ZiggyPitch on proposal acceptance
 // POST /api/documents/send-contract
 // Accepts: { proposal_id, template_id, client_email, client_name?, webhook_url? }

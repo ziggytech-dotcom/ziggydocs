@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 // Called by ZiggyHR offer letter flow
 // POST /api/documents/send-offer-letter
 // Accepts: { employee_id, template_id, signer_email, signer_name?, webhook_url? }
