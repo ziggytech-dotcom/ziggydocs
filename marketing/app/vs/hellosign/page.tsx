@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
-import Footer from "@/components/Footer";
+import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
   title: "ZiggyDocs vs Dropbox Sign (HelloSign) — Better Value at $19/mo",
