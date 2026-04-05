@@ -205,6 +205,63 @@ function ProofSection({ savedConfig }: { savedConfig: Record<string, string> }) 
   )
 }
 
+function ResendIntegration() {
+  const supabase = createClient()
+  const [saving, setSaving] = useState<string | null>(null)
+  const [message, setMessage] = useState('')
+  const [fields, setFields] = useState({ resend_api_key: '', resend_from_name: '', resend_from_email: '' })
+
+  useEffect(() => { load() }, [])
+
+  async function load() {
+    const { data: { session } } = await supabase.auth.getSession()
+    const res = await fetch('/api/workspace-integrations', {
+      headers: { Authorization: `Bearer ${session?.access_token}` }
+    })
+    const data = await res.json()
+    setFields({
+      resend_api_key: data.integrations?.resend_api_key || '',
+      resend_from_name: data.integrations?.resend_from_name || '',
+      resend_from_email: data.integrations?.resend_from_email || '',
+    })
+  }
+
+  async function save() {
+    setSaving('resend')
+    setMessage('')
+    const { data: { session } } = await supabase.auth.getSession()
+    const res = await fetch('/api/workspace-integrations', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${session?.access_token}` },
+      body: JSON.stringify(fields)
+    })
+    const data = await res.json()
+    if (data.error) setMessage(data.error)
+    else { setMessage('Saved!'); load() }
+    setSaving(null)
+  }
+
+  const inputClass = "w-full px-3 py-2 rounded-lg bg-[#0a0a0a] border border-[#222] text-white placeholder-[#555] focus:outline-none focus:border-[#7c3aed] text-sm font-mono"
+  const labelClass = "block text-sm text-[#888] mb-1.5"
+
+  return (
+    <div>
+      {message && <div className="mb-3 px-3 py-2 rounded-lg bg-[#7c3aed]/10 border border-[#7c3aed]/20 text-[#a78bfa] text-sm">{message}</div>}
+      <div className="space-y-3">
+        <div><label className={labelClass}>API Key</label>
+          <input type="password" value={fields.resend_api_key} onChange={e => setFields({...fields, resend_api_key: e.target.value})} placeholder="re_..." className={inputClass} /></div>
+        <div><label className={labelClass}>From Name</label>
+          <input value={fields.resend_from_name} onChange={e => setFields({...fields, resend_from_name: e.target.value})} placeholder="Your Business Name" className={inputClass} /></div>
+        <div><label className={labelClass}>From Email</label>
+          <input type="email" value={fields.resend_from_email} onChange={e => setFields({...fields, resend_from_email: e.target.value})} placeholder="hello@yourdomain.com" className={inputClass} /></div>
+      </div>
+      <button onClick={save} disabled={saving === 'resend'} className="mt-3 px-4 py-2 bg-[#7c3aed] text-white rounded-lg text-sm font-medium hover:bg-[#7c3aed]/90 disabled:opacity-50 transition-colors">
+        {saving === 'resend' ? 'Saving...' : 'Save'}
+      </button>
+    </div>
+  )
+}
+
 function TeamSection() {
   const supabase = createClient()
   const [members, setMembers] = useState<any[]>([])
@@ -577,6 +634,13 @@ export default function SettingsClient({ savedIntegrations }: Props) {
             )
           })}
         </div>
+      </div>
+
+      {/* Email Integrations (Resend BYOK) */}
+      <div className="bg-[#111] border border-[#222] rounded-2xl p-6 mb-4">
+        <h3 className="text-base font-semibold text-white mb-1">Email (Resend)</h3>
+        <p className="text-[#888] text-xs mb-4">Get your API key at resend.com → API Keys</p>
+        <ResendIntegration />
       </div>
 
       {/* Team Management */}
