@@ -3,19 +3,19 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "ZiggyDocs &mdash; E-Sign for $19/mo. Unlimited Documents.",
+    default: "ZiggyDocs — E-Signatures & Document Management",
     template: "%s | ZiggyDocs",
   },
   description:
-    "ZiggyDocs is the affordable e-signature platform. Send contracts, get them signed, store them securely. No envelope limits. No per-user fees. Just $19/mo.",
+    "Send, sign, and manage documents in minutes. Unlimited e-signatures, templates, and client signing — at a fraction of DocuSign's price.",
   keywords: ["e-sign", "electronic signature", "document signing", "esignature", "docusign alternative"],
   authors: [{ name: "ZiggyTech Ventures" }],
   openGraph: {
     type: "website",
     siteName: "ZiggyDocs",
-    title: "ZiggyDocs &mdash; E-Sign for $19/mo. Unlimited Documents.",
+    title: "ZiggyDocs — E-Signatures & Document Management",
     description:
-      "Send contracts, get them signed, store them securely. No envelope limits. No per-user fees.",
+      "Send, sign, and manage documents in minutes. Unlimited e-signatures, templates, and client signing — at a fraction of DocuSign's price.",
     images: [
       {
         url: "/og-image.png",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZiggyDocs &mdash; E-Sign for $19/mo. Unlimited Documents.",
+    title: "ZiggyDocs — E-Signatures & Document Management",
     description:
-      "Send contracts, get them signed, store them securely. No envelope limits. No per-user fees.",
+      "Send, sign, and manage documents in minutes. Unlimited e-signatures, templates, and client signing — at a fraction of DocuSign's price.",
     images: ["/og-image.png"],
   },
   metadataBase: new URL("https://ziggydocs.com"),
