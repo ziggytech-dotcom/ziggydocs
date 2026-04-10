@@ -12,7 +12,8 @@ export function middleware(request: NextRequest) {
   
   // Check for auth session cookie
   const session = request.cookies.get('supabase-auth-token') || 
-                  request.cookies.get('sb-tabrmsrxtqnuwivgwggb-auth-token')
+                  request.cookies.get('sb-tabrmsrxtqnuwivgwggb-auth-token') ||
+                  request.cookies.get('sb-ikajnrlysrvmngrwqvdz-auth-token')
   
   if (!session) {
     return NextResponse.redirect(new URL('/login', request.url))
